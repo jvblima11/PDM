@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroud"
+    tools:context=".Detalhes_loc">
+
+    <TextView
+        android:id="@+id/loc"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:hint="NOME DO LOCAL"
+        android:textColorHint="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/image_loc"
+        android:layout_width="260dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/chie"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/loc"
+        />
+
+    <TextView
+        android:id="@+id/desc_local"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:hint="Descrição (entre 3 a 4 linhas)"
+        android:gravity="top"
+        android:textSize="20dp"
+        android:textColorHint="@color/black"
+        android:background="@color/gray"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="50dp"
+        app:layout_constraintTop_toBottomOf="@id/line"
+        android:layout_marginTop="30dp"
+        />
+
+    <TextView
+        android:id="@+id/horarios"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@color/gray"
+        android:hint="Horarios disponiveis e ocupados"
+        android:gravity="top"
+        android:textSize="20dp"
+        android:textColorHint="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="50dp"
+        app:layout_constraintTop_toBottomOf="@id/desc_local"
+        android:layout_marginTop="30dp"
+        />
+    <TextView
+        android:id="@+id/data"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:hint="Datas de reserva"
+        android:gravity="top"
+        android:background="@color/gray"
+        android:textSize="20dp"
+        android:textColorHint="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="50dp"
+        app:layout_constraintTop_toBottomOf="@id/horarios"
+        android:layout_marginTop="30dp"
+        />
+    
+    <Button
+        android:id="@+id/but_volta"
+        android:text="@string/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toBottomOf="@id/data"
+        app:layout_constraintStart_toStartOf="@id/data"
+        android:layout_marginTop="30dp"
+        />
+
+    <Button
+        android:id="@+id/but_reserva"
+        android:text="@string/Reserva"
+        android:textAllCaps="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/data"
+        app:layout_constraintEnd_toEndOf="@id/data"
+        android:layout_marginTop="30dp"
+        />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="350dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="15sp"
+        android:background="@color/dark_blue"
+        android:visibility="visible"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/image_loc" />
+</androidx.constraintlayout.widget.ConstraintLayout>

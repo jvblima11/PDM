@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroud"
+    tools:context=".Menu_principal">
+
+    <ImageView
+        android:id="@+id/chie_menu1"
+        android:src="@drawable/chie"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.120"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/chie_menu2"
+        android:src="@drawable/chocobo_cloud"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.120"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/chie_menu1"
+        />
+
+    <ImageView
+        android:id="@+id/chie_menu3"
+        android:layout_width="70dp"
+        android:src="@drawable/choco"
+        android:layout_height="70dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.120"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/chie_menu2"
+        />
+
+    <TextView
+        android:id="@+id/desc1"
+        android:layout_width="270dp"
+        android:background="@color/white"
+        android:text="@string/Desc1"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:layout_height="70dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toEndOf="@+id/chie_menu1"
+        tools:layout_editor_absoluteY="100dp"
+         />
+
+    <TextView
+        android:id="@+id/desc2"
+        android:layout_width="270dp"
+        android:background="@color/white"
+        android:text="@string/Desc2"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:layout_height="70dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toEndOf="@+id/chie_menu2"
+        tools:layout_editor_absoluteY="185dp" />
+
+    <TextView
+        android:id="@+id/desc3"
+        android:text="@string/Desc3"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:background="@color/white"
+        android:layout_width="270dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toEndOf="@+id/chie_menu2"
+        tools:layout_editor_absoluteY="270dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

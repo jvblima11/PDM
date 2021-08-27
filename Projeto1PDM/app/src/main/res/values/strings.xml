@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Projeto 1-PDM</string>
+    <string name="Entrar">Entrar</string>
+    <string name="text_cadas">Cadastrar</string>
+    <string name="Esqueci">Esqueci minha senha</string>
+    <string name="Desc1">Descrição 1</string>
+    <string name="Desc2">Descrição 2</string>
+    <string name="Desc3">Descrição 3</string>
+    <string name="back">Voltar</string>
+    <string name="Reserva">Reservar</string>
+</resources>
